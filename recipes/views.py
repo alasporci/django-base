@@ -4,12 +4,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, "recipes/home.html")
+    return render(request, "recipes/pages/home.html",context={
+        "name": "Nome via contexto"
+    })
 
 def contato(request):
-    return HttpResponse("contato")
+    return render(request, "recipes/pages/contato.html")
 
 
 def sobre(request):
-    return HttpResponse("sobre")
+    return render(request, "recipes/pages/sobre.html")
 
