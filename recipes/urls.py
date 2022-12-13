@@ -1,5 +1,5 @@
 from django.urls import path
-from recipes.views import home, contato, sobre
+from . import views
 
 # teste 
 # from django.http import HttpResponse
@@ -9,7 +9,8 @@ from recipes.views import home, contato, sobre
 
 
 urlpatterns = [
-    path('', home),
-    path('contato/', contato),
-    path('sobre/', sobre),
+    path('', views.home),
+    path('contato/', views.contato),
+    path('sobre/', views.sobre),
+    path('recipes/<int:id>/', views.recipe),
 ]

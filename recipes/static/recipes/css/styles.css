@@ -210,6 +210,19 @@ body {
     filter: brightness(1.5);
 }
 
+.main-content-detail .recipe-list-item {
+    max-width: 84rem;
+
+}
+
+.main-content-detail .recipe-list-item:hover {
+    /* max-width: 64rem; */
+    transform: scale(1.0);
+    box-shadow: -5px 5px 15px rgba(75, 74, 74, 0.39);
+}
+
+
+
 .button-full-width {
     width: 100%;
 }
