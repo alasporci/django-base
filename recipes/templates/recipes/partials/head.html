@@ -116,18 +116,17 @@
 
         .main-content-list{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
-            gap: 5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap: 3rem;
         }
-        .temp{
-            height: 40rem;
-            background: #ff0000;
-        }
+    
         .recipe{
             background: white;
             box-shadow: -5px 5px 10px rgba(128, 128, 128, 0.39);
             transform: scale(1);
             transition: all 300ms ease-in-out;
+            border-radius: .4rem;
+            overflow: hidden;
             
         }
         .recipe img{
@@ -173,6 +172,52 @@
         .recipe-author a:hover{
             color: #110f55;
         }
+        .recipe-meta-container{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 3em;
+            padding-top: 1.5rem;
+            padding-bottom: 2rem;
+            background: rgba(187, 187, 187, 0.219);
+        }
+        .recipe-meta{
+            display: flex;
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow:1;
+            text-align:center;
+        }
+        .recipe-meta-title{
+            font-size: 1.6rem;
+        }
+        .recipe-footer a {
+        background: rgb(20, 24, 58);
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 1.5rem;
+        transition: all 300ms ease-in-out;
+        }
+        .recipe-footer a:hover {
+        filter: brightness(1.5);
+        }
+        .button-full-width{
+            width: 100%;
+        }
+        .footer-content{
+            display: block;
+        }
+        .footer-links{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
+        }
+        .footer-links a{
+            text-decoration: none;
+            text-align: center;
+        }
+        
     </style>
 </head>
