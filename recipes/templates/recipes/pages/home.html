@@ -6,46 +6,10 @@
 
     <main class="main-content-container">
         <div class="main-content container main-content-list">
-            <!-- <div class="temp"></div> -->
-
-            <div class="recipe recipe-list-item">
-                <div class="recipe-cover">
-                    <img src="https://via.placeholder.com/1280x720.png/09f/fffC/O%20https://placeholder.com/" alt="">
-
-                </div>
-                <div class="recipe-title-container">
-                    <h2 class="recipe-title">Lorem ipsum dolor sit amet
-                    </h2>
-                </div>
-                <div class="recipe-author">
-                    <span class="recipe-author-item">
-                        <i class="fa-solid fa-user"></i>
-                        Joao da Silva
-                    </span>
-                    <span class="recipe-author-item">
-                        <i class="fa-solid fa-calendar"></i>
-                        10/10/2022
-                    </span>
-                    <span class="recipe-author-item">
-                        <a href="/"><i class="fa-solid fa-link"></i>Veja mais</a>
-                    </span>
-                </div>
-                <div class="recipe-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odit explicabo enim sit nobis.
-                        Omnis eveniet aliquid incidunt magnam quod, eius unde nulla autem assumenda?></p>
-                </div>
-                <div class="recipe-meta-container">
-                    <div class="recipe-meta">
-                        <h3 class="recipe-meta-title">
-                            <i class="fa-solid fa-timer"></i> 0 minutos
-                        </h3>
-                    </div>
-                </div>
-
-            </div>
+            {% include 'recipes/partials/recipe.html' %}
         </div>
     </main>
-
+    {% include 'recipes/partials/footer.html' %}
 
 </body>
 
