@@ -13,4 +13,5 @@ urlpatterns = [
     path('contato/', views.contato),
     path('sobre/', views.sobre),
     path('recipes/<int:id>/', views.recipe),
+    
 ]
